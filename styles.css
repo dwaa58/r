@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* إعداد الخلفية */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #d7e1ec); /* خلفية متدرجة باللون الأزرق الفاتح */
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الهيدر مع الشعار */
+header {
+    background-color: #2b3e50; /* أزرق داكن */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%; /* جعل الصورة دائرية إذا لزم */
+}
+
+/* تنسيق النصوص في الهيدر */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* تنسيق القسم الرئيسي */
+main {
+    padding: 20px;
+}
+
+/* تنسيق مؤشرات الأداء */
+.kpis {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.kpi-item {
+    background-color: #e9eff4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الجدول */
+.tasks table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tasks th, .tasks td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.tasks th {
+    background-color: #324a5f; /* لون أزرق داكن */
+    color: white;
+}
+
+/* تنسيق الحالات */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.not-started {
+    background-color: #d9534f; /* أحمر هادئ */
+    color: white;
+}
+
+.in-progress {
+    background-color: #f0ad4e; /* برتقالي */
+    color: white;
+}
+
+.completed {
+    background-color: #5bc0de; /* أزرق فاتح */
+    color: white;
+}
+
+/* تنسيق قسم المخطط البياني */
+.chart-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    height: 300px;
+}
+
+/* تنسيق الإشعارات */
+.notifications {
+    margin-top: 20px;
+}
+
+#notification-area {
+    background-color: #e7f1fa;
+    padding: 10px;
+    border: 1px solid #b3d4f7;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* تنسيق النموذج */
+.task-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.task-form input, .task-form select, .task-form button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.task-form button {
+    background-color: #5bc0de; /
+

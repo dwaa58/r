@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع مشروع PMO - المنصات والمؤسسات المانحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- مكتبة Chart.js -->
+</head>
+<body>
+    <header>
+        <h1>PMO - المنصات والمؤسسات المانحة</h1>
+        <p>إدارة ومتابعة المشاريع لضمان توفير الدواء للجميع</p>
+    </header>
+
+    <main>
+        <!-- مؤشرات الأداء الرئيسية -->
+        <section class="kpis">
+            <h2>مؤشرات الأداء الرئيسية (KPIs)</h2>
+            <div class="kpi-item">
+                <h3>عدد المشاريع</h3>
+                <p id="project-count">0</p>
+            </div>
+            <div class="kpi-item">
+                <h3>نسبة الإنجاز الكلية</h3>
+                <p id="overall-progress">0%</p>
+            </div>
+        </section>
+
+        <!-- جدول المهام -->
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>تتبع مشروع PMO - المنصات والمؤسسات المانحة</title>
+            <link rel="stylesheet" href="styles.css">
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- مكتبة Chart.js -->
+        </head>
+        <body>        
+            <main>              
+        
+                <!-- جدول المهام -->
+                <section class="tasks">
+                    <h2>المهام حسب المؤسسات المانحة</h2>
+                    <table id="tasks-table">
+                        <thead>
+                            <tr>
+                                <th>المؤسسة</th>
+                                <th>النشاط</th>
+                                <th>الحالة</th>
+                                <th>تاريخ التسليم</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>مؤسسة صناع الخير</td>
+                                <td>تمويل شراء أدوية</td>
+                                <td><span class="status not-started" onclick="updateTask(this)">لم يبدأ</span></td>
+                                <td>30 أكتوبر 2024</td>
+                            </tr>
+                            <tr>
+                                <td>منصة إحسان</td>
+                                <td>رفع منصة احسان </td>
+                                <td><span class="status in-progress" onclick="updateTask(this)">قيد التنفيذ</span></td>
+                                <td>15 نوفمبر 2024</td>
+                            </tr>
+                            <tr>
+                                <td>مؤسسة الراجحي</td>
+                                <td>إطلاق حملات توعية</td>
+                                <td><span class="status completed" onclick="updateTask(this)">مكتمل</span></td>
+                                <td>15 نوفمبر 2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>        
+            <section class="task-form">
+            <h2>إضافة مهمة جديدة</h2>
+            <input type="text" id="institution" placeholder="اسم المؤسسة" required>
+            <input type="text" id="activity" placeholder="النشاط" required>
+            <select id="status">
+                <option value="not-started">لم يبدأ</option>
+                <option value="in-progress">قيد التنفيذ</option>
+                <option value="completed">مكتمل</option>
+            </select>
+            <input type="date" id="deadline" required>
+            <button onclick="addTask()">إضافة المهمة</button>
+        </section>
+        
+        <!-- مخطط بياني -->
+        <section class="chart-section">
+            <h2>مخطط حالة المشاريع</h2>
+            <canvas id="progressChart"></canvas>
+        </section>
+
+        <section class="notifications">
+            <h2>الإشعارات</h2>
+            <div id="notification-area"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>تم إعداد هذه الصفحة لمتابعة تقدم المشاريع وضمان تحقيق الأهداف الخيرية.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
